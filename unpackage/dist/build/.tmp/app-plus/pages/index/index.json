@@ -1,0 +1,20 @@
+{
+  "navigationBarTitleText": "书城",
+  "backgroundColor": "#FFFFFF",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "titleNView": {
+    "searchInput": {
+      "align": "left",
+      "backgroundColor": "#f8f8f9",
+      "borderRadius": "13px",
+      "placeholder": "搜索您想看的书本",
+      "placeholderColor": "#808695",
+      "disabled": true
+    }
+  },
+  "usingComponents": {
+    "template3": "/pages/index/template/template3",
+    "template1": "/pages/index/template/template1",
+    "template2": "/pages/index/template/template2"
+  }
+}

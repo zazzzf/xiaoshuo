@@ -1,0 +1,99 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "书城",
+				"backgroundColor": "#FFFFFF",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "left",
+							"backgroundColor": "#f8f8f9",
+							"borderRadius": "13px",
+							"placeholder": "搜索您想看的书本",
+							"placeholderColor": "#808695",
+							"disabled": true
+						}
+					}
+				}
+			}
+		}, {
+			"path": "pages/bookDetail/bookDetail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"backgroundColor": "#FFFFFF",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/ranking/ranking",
+			"style": {
+				"navigationBarTitleText": "排行榜",
+				"backgroundColor": "#FFFFFF",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/bookshelf/bookshelf",
+			"style": {}
+		}
+	    ,{
+            "path" : "pages/ucenter/ucenter",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/category/category",
+            "style" : {
+				"navigationBarTitleText": "分类",
+				"backgroundColor": "#FFFFFF",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        }
+        ,{
+            "path" : "pages/category/categoryDetail",
+            "style" : {
+				"navigationBarTitleText": "分类详情",
+				"backgroundColor": "#FFFFFF",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+        },
+		{
+		    "path" : "pages/reader/index",
+		    "style" : {
+				"navigationStyle":"custom"
+			}
+		}
+    ],
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#E14A4A",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "书城",
+				"iconPath": "/static/images/tabBar/bookstore-o.png",
+				"selectedIconPath": "/static/images/tabBar/bookstore.png"
+			},
+			{
+				"pagePath": "pages/bookshelf/bookshelf",
+				"text": "书架",
+				"iconPath": "/static/images/tabBar/bookshelf-o.png",
+				"selectedIconPath": "/static/images/tabBar/bookshelf.png"
+			},
+			{
+				"pagePath": "pages/ucenter/ucenter",
+				"text": "我的",
+				"iconPath": "/static/images/tabBar/personal-o.png",
+				"selectedIconPath": "/static/images/tabBar/personal.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "书城",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

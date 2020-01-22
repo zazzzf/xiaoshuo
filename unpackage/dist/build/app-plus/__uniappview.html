@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"蛇皮小说","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"navigationBarTitleText":"书城","backgroundColor":"#FFFFFF","navigationBarBackgroundColor":"#FFFFFF","titleNView":{"searchInput":{"align":"left","backgroundColor":"#f8f8f9","borderRadius":"13px","placeholder":"搜索您想看的书本","placeholderColor":"#808695","disabled":true}},"usingComponents":{"template3":"/pages/index/template/template3","template1":"/pages/index/template/template1","template2":"/pages/index/template/template2"}}},"pages/bookDetail/bookDetail.html":{"window":{"navigationBarTitleText":"详情","backgroundColor":"#FFFFFF","navigationBarBackgroundColor":"#FFFFFF","usingComponents":{}}},"pages/ranking/ranking.html":{"window":{"navigationBarTitleText":"排行榜","backgroundColor":"#FFFFFF","navigationBarBackgroundColor":"#FFFFFF","usingComponents":{}}},"pages/bookshelf/bookshelf.html":{"window":{"usingComponents":{}}},"pages/ucenter/ucenter.html":{"window":{"usingComponents":{}}},"pages/category/category.html":{"window":{"navigationBarTitleText":"分类","backgroundColor":"#FFFFFF","navigationBarBackgroundColor":"#FFFFFF","usingComponents":{}}},"pages/category/categoryDetail.html":{"window":{"navigationBarTitleText":"分类详情","backgroundColor":"#FFFFFF","navigationBarBackgroundColor":"#FFFFFF","usingComponents":{}}},"pages/reader/index.html":{"window":{"navigationStyle":"custom","usingComponents":{"uni-list":"/components/uni-list/uni-list","uni-list-item":"/components/uni-list-item/uni-list-item"}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"书城","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#999","selectedColor":"#E14A4A","backgroundColor":"#fff","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","text":"书城","iconPath":"/static/images/tabBar/bookstore-o.png","selectedIconPath":"/static/images/tabBar/bookstore.png"},{"pagePath":"pages/bookshelf/bookshelf.html","text":"书架","iconPath":"/static/images/tabBar/bookshelf-o.png","selectedIconPath":"/static/images/tabBar/bookshelf.png"},{"pagePath":"pages/ucenter/ucenter.html","text":"我的","iconPath":"/static/images/tabBar/personal-o.png","selectedIconPath":"/static/images/tabBar/personal.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/bookDetail/bookDetail","pages/ranking/ranking","pages/bookshelf/bookshelf","pages/ucenter/ucenter","pages/category/category","pages/category/categoryDetail","pages/reader/index"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.4.6","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

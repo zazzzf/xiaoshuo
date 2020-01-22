@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookDetail/bookDetail",
+    "pages/ranking/ranking",
+    "pages/bookshelf/bookshelf",
+    "pages/ucenter/ucenter",
+    "pages/category/category",
+    "pages/category/categoryDetail",
+    "pages/reader/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "书城",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#E14A4A",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书城",
+        "iconPath": "/static/images/tabBar/bookstore-o.png",
+        "selectedIconPath": "/static/images/tabBar/bookstore.png"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "text": "书架",
+        "iconPath": "/static/images/tabBar/bookshelf-o.png",
+        "selectedIconPath": "/static/images/tabBar/bookshelf.png"
+      },
+      {
+        "pagePath": "pages/ucenter/ucenter",
+        "text": "我的",
+        "iconPath": "/static/images/tabBar/personal-o.png",
+        "selectedIconPath": "/static/images/tabBar/personal.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap51.json"
+}

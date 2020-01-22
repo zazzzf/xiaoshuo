@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "书城",
+  "backgroundColor": "#FFFFFF",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "template3": "/pages/index/template/template3",
+    "template1": "/pages/index/template/template1",
+    "template2": "/pages/index/template/template2"
+  }
+}
