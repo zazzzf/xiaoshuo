@@ -5,4 +5,4 @@
 - Simple-小说 小说部分模版 作者：  SimpleJalon 
 两个插件结合制作
 
-[下载地址](http://www.zzfcode.club/assets/__UNI__2FB5A54_0327114445.apk)
+[下载地址](http://www.zzfcode.club/assets/fabooks.apk)
