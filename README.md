@@ -6,6 +6,7 @@
 两个插件结合制作
 
 本项目中部分抓取书籍为vip书籍，到达vip章节后会提示vip章节无法观看。
-本项目仅供学习使用，欢迎大家
+
+本项目仅供学习使用，欢迎大家fork学习，觉得有帮助可以点个star
 
 [下载地址](http://www.zzfcode.club/assets/fabooks.apk)
